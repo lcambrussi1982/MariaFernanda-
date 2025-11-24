@@ -4,8 +4,9 @@
   --cor-secundaria: #e0f7f4;    /* 30% - fundos suaves, blocos */
   --cor-destaque: #f97316;      /* 10% - botões, detalhes, hovers */
 
-  --cor-texto: #0f172a;
-  --cor-texto-suave: #4b5563;
+  /* Deixei o texto CLARO para não sumir no fundo escuro */
+  --cor-texto: #e5e7eb;
+  --cor-texto-suave: #cbd5f5;
   --cor-fundo: #020617;
 
   --borda-suave: #d1e3e8;
@@ -68,6 +69,16 @@ img {
   );
   border-bottom: 1px solid rgba(148, 163, 184, 0.4);
   box-shadow: 0 14px 35px rgba(15, 23, 42, 0.5);
+}
+
+/* Header ao rolar (usado pelo JS) */
+.topo--scrolled {
+  background: linear-gradient(
+    90deg,
+    rgba(15, 118, 110, 0.96),
+    rgba(8, 47, 73, 0.98)
+  );
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.7);
 }
 
 .topo__conteudo {
@@ -616,6 +627,34 @@ img {
 .texto-menor {
   font-size: 0.88rem;
   color: #e5e7eb;
+}
+
+/* ============================= */
+/* ANIMAÇÕES E STATUS DO FORM   */
+/* ============================= */
+
+/* Estado inicial para elementos animáveis */
+.is-animable {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+/* Quando entram na tela */
+.is-animable.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mensagens de status do formulário */
+.formulario-contato__status--erro {
+  color: #fecaca;
+  font-weight: 600;
+}
+
+.formulario-contato__status--sucesso {
+  color: #bbf7d0;
+  font-weight: 600;
 }
 
 /* RESPONSIVIDADE */
