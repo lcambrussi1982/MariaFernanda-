@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Especialidades | Tornozelo & Ortopedia</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div class="container topo__conteudo">
+      <div class="logo">
+        <span class="logo__simbolo">MF</span>
+        <div class="logo__texto">
+          <span class="logo__nome">Dra. Maria Fernanda</span>
+          <span class="logo__subtitulo">Ortopedista · Especialista em Tornozelo</span>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="especialidades.html" class="ativo">Especialidades</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao secao--topo">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h1>Especialidades em tornozelo & ortopedia</h1>
+          <p>Tratamentos clínicos e cirúrgicos com foco em recuperar o seu movimento.</p>
+        </header>
+
+        <div class="cards3">
+          <article class="card card--servico">
+            <h2>Lesões esportivas do tornozelo</h2>
+            <p>
+              Atuação em entorses, rupturas ligamentares, tendinites e outras lesões relacionadas
+              à prática esportiva amadora e profissional.
+            </p>
+            <ul class="lista-marcadores">
+              <li>Avaliação funcional do tornozelo</li>
+              <li>Planejamento de retorno ao esporte</li>
+              <li>Prevenção de novas lesões</li>
+            </ul>
+          </article>
+
+          <article class="card card--servico">
+            <h2>Fraturas & traumas</h2>
+            <p>
+              Tratamento de fraturas do tornozelo e pé, com foco em alinhamento adequado e
+              reabilitação completa.
+            </p>
+            <ul class="lista-marcadores">
+              <li>Tratamento conservador e cirúrgico</li>
+              <li>Acompanhamento com exames de imagem</li>
+              <li>Reabilitação orientada</li>
+            </ul>
+          </article>
+
+          <article class="card card--servico">
+            <h2>Dor crônica & artrose</h2>
+            <p>
+              Manejo de dor persistente, desgaste articular e limitações de movimento que afetam a rotina.
+            </p>
+            <ul class="lista-marcadores">
+              <li>Controle da dor</li>
+              <li>Fisioterapia orientada</li>
+              <li>Indicação cirúrgica quando necessário</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="cards2">
+          <article class="card card--servico">
+            <h2>Cirurgias do tornozelo</h2>
+            <p>
+              Procedimentos cirúrgicos para correção de instabilidades, deformidades e sequelas de traumas.
+            </p>
+            <p class="texto-menor">
+              A indicação cirúrgica é sempre discutida com o paciente, avaliando riscos, benefícios
+              e expectativas de resultado.
+            </p>
+          </article>
+
+          <article class="card card--servico">
+            <h2>Reabilitação & retorno à rotina</h2>
+            <p>
+              Acompanhamento próximo no pós-operatório ou tratamento clínico para garantir um retorno
+              seguro às atividades diárias e esportivas.
+            </p>
+          </article>
+        </div>
+
+        <div class="secao__cta-centro">
+          <h2>Tem dor no tornozelo há algum tempo?</h2>
+          <p>
+            Uma avaliação especializada pode evitar o agravamento da lesão e acelerar a sua recuperação.
+          </p>
+          <a href="contato.html" class="btn btn--principal">Agendar avaliação</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grid">
+      <div>
+        <div class="logo logo--rodape">
+          <span class="logo__simbolo">MF</span>
+          <div class="logo__texto">
+            <span class="logo__nome">Dra. Maria Fernanda</span>
+            <span class="logo__subtitulo">Ortopedista · Especialista em Tornozelo</span>
+          </div>
+        </div>
+        <p class="rodape__texto">
+          Informações deste site não substituem uma consulta médica presencial.
+        </p>
+      </div>
+      <div class="rodape__coluna">
+        <h4>Links</h4>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="especialidades.html">Especialidades</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="rodape__coluna">
+        <h4>Contato</h4>
+        <p>Clínica Ortopédica – Cidade / Estado</p>
+        <p>Telefone: (00) 0000-0000</p>
+        <p>WhatsApp: (00) 90000-0000</p>
+      </div>
+    </div>
+    <div class="rodape__copy">
+      © <span id="ano-atual"></span> Dra. Maria Fernanda · Todos os direitos reservados.
+    </div>
+
+    <script>
+      document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

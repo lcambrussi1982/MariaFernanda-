@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre | Dra. Maria Fernanda – Ortopedista</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div class="container topo__conteudo">
+      <div class="logo">
+        <span class="logo__simbolo">MF</span>
+        <div class="logo__texto">
+          <span class="logo__nome">Dra. Maria Fernanda</span>
+          <span class="logo__subtitulo">Ortopedista · Especialista em Tornozelo</span>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="sobre.html" class="ativo">Sobre</a>
+        <a href="especialidades.html">Especialidades</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao secao--topo">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h1>Sobre a Dra. Maria Fernanda</h1>
+          <p>
+            Ortopedista com foco em tornozelo e pé, unindo experiência clínica, cirúrgica e visão
+            humanizada do cuidado.
+          </p>
+        </header>
+
+        <div class="secao__grid">
+          <div>
+            <h2>Formação & Experiência</h2>
+            <p>
+              A Dra. Maria Fernanda é médica formada em <em>Medicina</em> por [Nome da instituição],
+              com residência em Ortopedia e Traumatologia e subespecialização em tornozelo e pé.
+            </p>
+            <p>
+              Atua no tratamento de lesões ligamentares, fraturas, entorses, artrose, deformidades
+              e dores crônicas que comprometem o movimento e a qualidade de vida dos pacientes.
+            </p>
+
+            <h3>Valores no cuidado ao paciente</h3>
+            <ul class="lista-marcadores">
+              <li>Escuta ativa e respeito à história de cada paciente.</li>
+              <li>Explicações claras sobre diagnósticos e opções de tratamento.</li>
+              <li>Busca constante por técnicas minimamente invasivas.</li>
+              <li>Foco na reabilitação completa, incluindo retorno ao esporte e à rotina.</li>
+            </ul>
+          </div>
+
+          <aside class="bloco-info">
+            <h3>Áreas de atuação</h3>
+            <ul class="lista-dados">
+              <li><strong>Ortopedia geral</strong></li>
+              <li><strong>Tornozelo e pé</strong></li>
+              <li>Lesões esportivas</li>
+              <li>Traumas e fraturas</li>
+              <li>Cirurgias reconstrutivas</li>
+            </ul>
+            <a href="especialidades.html" class="btn btn--secundario bloco-info__btn">
+              Ver especialidades
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grid">
+      <div>
+        <div class="logo logo--rodape">
+          <span class="logo__simbolo">MF</span>
+          <div class="logo__texto">
+            <span class="logo__nome">Dra. Maria Fernanda</span>
+            <span class="logo__subtitulo">Ortopedista · Especialista em Tornozelo</span>
+          </div>
+        </div>
+        <p class="rodape__texto">
+          Informações deste site não substituem uma consulta médica presencial.
+        </p>
+      </div>
+      <div class="rodape__coluna">
+        <h4>Links</h4>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="especialidades.html">Especialidades</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="rodape__coluna">
+        <h4>Contato</h4>
+        <p>Clínica Ortopédica – Cidade / Estado</p>
+        <p>Telefone: (00) 0000-0000</p>
+        <p>WhatsApp: (00) 90000-0000</p>
+      </div>
+    </div>
+    <div class="rodape__copy">
+      © <span id="ano-atual"></span> Dra. Maria Fernanda · Todos os direitos reservados.
+    </div>
+
+    <script>
+      document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | Agende sua consulta</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div class="container topo__conteudo">
+      <div class="logo">
+        <span class="logo__simbolo">MF</span>
+        <div class="logo__texto">
+          <span class="logo__nome">Dra. Maria Fernanda</span>
+          <span class="logo__subtitulo">Ortopedista · Especialista em Tornozelo</span>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="especialidades.html">Especialidades</a>
+        <a href="contato.html" class="ativo">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao secao--topo">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h1>Agende sua consulta</h1>
+          <p>Envie seus dados e entraremos em contato para confirmar o melhor horário.</p>
+        </header>
+
+        <div class="secao__grid">
+          <form class="formulario-contato">
+            <div class="grupo-campo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+            </div>
+
+            <div class="grupo-grid">
+              <div class="grupo-campo">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 90000-0000" required />
+              </div>
+              <div class="grupo-campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" />
+              </div>
+            </div>
+
+            <div class="grupo-grid">
+              <div class="grupo-campo">
+                <label for="data">Preferência de data</label>
+                <input type="date" id="data" name="data" />
+              </div>
+              <div class="grupo-campo">
+                <label for="periodo">Período do dia</label>
+                <select id="periodo" name="periodo">
+                  <option value="">Selecione</option>
+                  <option value="manha">Manhã</option>
+                  <option value="tarde">Tarde</option>
+                  <option value="noite">Noite</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grupo-campo">
+              <label for="motivo">Motivo da consulta</label>
+              <textarea id="motivo" name="motivo" rows="4" placeholder="Descreva brevemente sua dor ou queixa"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--principal">Enviar mensagem</button>
+            <p class="formulario-contato__aviso">
+              Este formulário não confirma consulta automaticamente. A equipe entrará em contato para finalizar o agendamento.
+            </p>
+          </form>
+
+          <aside class="bloco-info">
+            <h2>Informações do consultório</h2>
+            <ul class="lista-dados">
+              <li><strong>Endereço:</strong> Rua Exemplo, 123 – Bairro – Cidade / Estado</li>
+              <li><strong>Telefone:</strong> (00) 0000-0000</li>
+              <li><strong>WhatsApp:</strong> (00) 90000-0000</li>
+              <li><strong>E-mail:</strong> contato@dramariafernanda.com.br</li>
+            </ul>
+
+            <h3>Horários de atendimento</h3>
+            <ul class="lista-marcadores">
+              <li>Segunda a sexta: 08h às 18h</li>
+              <li>Sábado: 08h às 12h</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grid">
+      <div>
+        <div class="logo logo--rodape">
+          <span class="logo__simbolo">MF</span>
+          <div class="logo__texto">
+            <span class="logo__nome">Dra. Maria Fernanda</span>
+            <span class="logo__subtitulo">Ortopedista · Especialista em Tornozelo</span>
+          </div>
+        </div>
+        <p class="rodape__texto">
+          Informações deste site não substituem uma consulta médica presencial.
+        </p>
+      </div>
+      <div class="rodape__coluna">
+        <h4>Links</h4>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="especialidades.html">Especialidades</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="rodape__coluna">
+        <h4>Contato</h4>
+        <p>Clínica Ortopédica – Cidade / Estado</p>
+        <p>Telefone: (00) 0000-0000</p>
+        <p>WhatsApp: (00) 90000-0000</p>
+      </div>
+    </div>
+    <div class="rodape__copy">
+      © <span id="ano-atual"></span> Dra. Maria Fernanda · Todos os direitos reservados.
+    </div>
+
+    <script>
+      document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
