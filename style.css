@@ -709,3 +709,18 @@ img {
     padding: 0 1.1rem;
   }
 }
+/* ============================= */
+/* AJUSTE DE CONTRASTE DE TEXTOS */
+/* ============================= */
+
+/* Deixa os textos soltos das seções mais claros,
+   sem mexer na faixa de destaque (.secao--destaque) */
+.secao:not(.secao--destaque) h2,
+.secao:not(.secao--destaque) h3 {
+  color: #f9fafb;   /* quase branco */
+}
+
+.secao:not(.secao--destaque) p,
+.secao:not(.secao--destaque) li {
+  color: #e5e7eb;   /* cinza bem claro */
+}
