@@ -724,3 +724,10 @@ img {
 .secao:not(.secao--destaque) li {
   color: #e5e7eb;   /* cinza bem claro */
 }
+.logo__img {
+  height: 52px;          /* ajusta o tamanho da logo */
+  width: auto;
+  border-radius: 14px;   /* se a imagem tiver bordas retas, dá um ar mais “glass” */
+  object-fit: cover;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.45);
+}
